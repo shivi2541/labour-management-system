@@ -1,0 +1,40 @@
+@import "tailwindcss";
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial;
+  background: #f4f7fb;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: scale(1.03);
+  opacity: 0.9;
+}
+@media (max-width: 768px) {
+  .sidebar {
+    position: absolute;
+    width: 200px;
+    height: 100%;
+  }
+}
