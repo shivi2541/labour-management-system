@@ -1,16 +1,82 @@
-# React + Vite
+Labour Management System
+Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The Labour Management System is a full-stack web application built to efficiently manage labour records, attendance, payments, and role-based access for contractors and workers. The platform helps digitize manual labour management processes and improves transparency, organization, and tracking of daily work activities.
 
-Currently, two official plugins are available:
+Features
+Authentication System
+User registration and login functionality
+Role-based access control (Admin, Contractor, Labour)
+Secure authentication using JSON Web Tokens (JWT)
+Labour Management
+Add and manage labour profiles
+Update and edit labour details
+View complete labour information and history
+Attendance Management
+Mark daily attendance of labourers
+Track present and absent records
+View attendance history for reporting
+Payment System
+Add and manage labour payments
+Track pending and completed payments
+Maintain payment history for records
+Dashboard
+Separate dashboards for different user roles
+Overview of key data and activities
+Clean and user-friendly interface
+Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Frontend:
 
-## React Compiler
+React.js
+JavaScript (ES6+)
+CSS
+Vite
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Backend:
 
-## Expanding the ESLint configuration
+Node.js
+Express.js
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Database:
+
+MongoDB
+
+Authentication:
+
+JSON Web Token (JWT)
+Project Structure
+labour-management-system/
+│
+├── backend/
+│   ├── config/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   ├── utils/
+│   ├── server.js
+│   └── package.json
+│
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── assets/
+│   │   ├── components/
+│   │   ├── context/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   ├── styles/
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   ├── vite.config.js
+│   └── package.json
+│
+└── README.md
+
+Future Improvements
+Mobile responsive UI optimization
+Advanced analytics dashboard
+Export reports in PDF/Excel format
+Notification system
+Deployment on cloud platforms
